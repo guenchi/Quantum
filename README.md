@@ -30,21 +30,28 @@ Examples:
 Simple gate combinations
 
 First let's apply a few Hadamard gates in sequence to a single qubit. The QEVAL performs the sum over histories:
-  (qeval (H (H (H 0))))
+```
+(qeval (H (H (H 0))))
 
       =>  (superposition (0.7071067811865 1) 
-                         (0.7071067811865 0))
+                         (0.7071067811865 0))
+```
 We see that the answer is a superposition of 0 and 1 with the indicated coefficients. Another simple check:
+ ```
   (qeval (H (H (H (H 0)))))
 
     => (superposition (1.0 0))
-Let's define a function that makes an EPR state:
-  (define (make-epr) (cnot (H 0) 0))
+    
+  ```
+(define (make-epr) (cnot (H 0) 0))
+```
 Evaluating this function we get
-  (qeval (make-epr))
+``` 
+(qeval (make-epr))
 
     => (superposition (0.7071067811865 (1 1)) 
-                      (0.7071067811865 (0 0)))
+                      (0.7071067811865 (0 0)))
+```
 The Deutsch algorithm
 
 The Deutsch algorithm is easily defined: Here Uf is the oracle (a unitary transformation of two qubits) corresponding to an unknown function f : Bit -> Bit. Note the use of the pattern matching in the third line of the BIND* form (which corresponds to LET* in the article) to linearly extract the constituent qubits.
