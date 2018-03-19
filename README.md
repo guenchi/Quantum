@@ -3,14 +3,17 @@
 This project is forked form http://www.het.brown.edu/people/andre/qlambda/index.html
 
 
-Scheme simulator
+***Scheme simulator***
 
 This page provides a simulator for a functional language based on Scheme for expressing and simulating quantum algorithms. Example code implementing some simple quantum algorithms is provided. For the theory, see my papers
+
 A lambda calculus for quantum computation - André van Tonder.
+
 Quantum computation, categorical semantics and linear logic - André van Tonder.
+
 which develop a linear lambda calculus for expressing quantum algorithms. The code below implements the examples in the first one of these two papers.
 
-Instructions
+***Instructions***
 
 The code should work in any Scheme adhering to the R5RS standard. It has been tested in PLT's DrScheme and Petite Chez Scheme, both of which are freely available.
 
