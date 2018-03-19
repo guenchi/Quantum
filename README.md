@@ -8,7 +8,6 @@ This project is forked form http://www.het.brown.edu/people/andre/qlambda/index.
 This page provides a simulator for a functional language based on Scheme for expressing and simulating quantum algorithms. Example code implementing some simple quantum algorithms is provided. For the theory, see my papers
 
 A lambda calculus for quantum computation - André van Tonder.
-
 Quantum computation, categorical semantics and linear logic - André van Tonder.
 
 which develop a linear lambda calculus for expressing quantum algorithms. The code below implements the examples in the first one of these two papers.
